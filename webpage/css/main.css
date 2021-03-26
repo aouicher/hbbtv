@@ -1,0 +1,77 @@
+;* {
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+	/* we explicitly set the size of the body element. This avoids that browser show scroll bars or that pages are floating if they are
+	bigger than the logical screen size */
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+	background-color: black;
+}
+
+a
+{
+	/* According to the OIPF DAE specification this shall prevent that a browser draws there default highlighting */
+	outline-style: none;
+	text-decoration: none;
+}
+
+div.safe_area 
+{
+	position: absolute;
+	/* Border of the safe area: 10% 5% 80% 90 */ 
+	left: 64px; top: 36px; width: 1024px; height: 648px;
+	background-color: black;
+}
+
+.log {
+	width: 1000px;
+	top: 0px;
+	position: absolute;
+	left: 0px;
+    overflow: auto;
+    background-color: transparent;
+}
+
+#log {
+	border-color: transparent;
+	border-style: solid;
+	overflow: hidden;
+	height: 480px;
+    background-color: transparent;
+}
+
+.log p{
+	max-width: 800px;
+	word-wrap: break-word;
+	font-size: small;
+    background-color: transparent;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.debug {
+	color: black;
+}
+
+.info {
+	color: green;
+}
+
+.warn {
+	color: blue;
+}
+
+.error {
+	color: red;
+}
+
